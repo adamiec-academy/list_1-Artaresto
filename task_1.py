@@ -9,4 +9,3 @@ def cross(n, shift):
     for i in range(n):
         print(shift * " ", end="")
         print(n * "*")
-cross(4, 4)
