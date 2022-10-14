@@ -3,11 +3,11 @@ def chess_board(n, k):
     for i in range(n*2):
             if even_odd == 0:
                 for j in range(k):
-                    print(("  "+"##")*n, end="\n")
+                    print(((" "+"#")*k)*n, end="\n")
                 even_odd = 1
             else:
                 for j in range(k):
-                    print(("##"+"  ")*n, end="\n")
+                    print((("#"+" ")*k)*n, end="\n")
                 even_odd = 0
                 
 """
