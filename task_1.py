@@ -4,6 +4,6 @@ def cross(n):
         i=i+1
         if i==n:
             for i in range(n):
-                print(n*(n-1)*"*")
+                print(n*3*"*")
     for i in range(n):
         print(" " * n + n * "*")
