@@ -1,11 +1,9 @@
-def cross(n, shift):
-    for i in range(n):
-        print(shift * " ", end="")
-        print(n * "*")
-        i=i+1
-        if i==n:
-            for i in range(n):
-                print(n*(n-1)*"*")
-    for i in range(n):
-        print(shift * " ", end="")
-        print(n * "*")
+def cross(n):
+    up_and_down = " " * n + "*" * n + " " * n
+    middle = "*" * 3 * n
+
+    for i in range(0, n * 3):
+        if i < n or  i >= 2 * n:
+            print(up_and_down)
+        else:
+            print(middle)
