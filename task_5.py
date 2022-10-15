@@ -6,8 +6,7 @@ def factorial(n):
         else:
             for i in range (2, n+1):
                 silnia = silnia*i
-            return silnia
-print(factorial(3))            
+            return silnia           
 
 def report():
     for j in range(101):
@@ -15,4 +14,3 @@ def report():
         dlugosc = len(str(silnia))
 
         print( f"{str(j):>3}! is {str(dlugosc):>3} digits long")
-        
